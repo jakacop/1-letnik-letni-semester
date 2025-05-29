@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>page title goes here</title>
+
+        <style>
+            body {font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 9pt;}
+            .rdec {color: red;}
+            h2 {text-align: center;}
+            h2, h3 {color: royalblue;}
+            pre {color: red;}
+            div#hr {width: 25%; text-align: left; height: 1px; background-color: black;}
+            .fnote {font-size: 7pt;}
+        </style>
+    </head>
+    <body>
+        <h2>XHTML Versions</h2>
+        <h3>XHTML 1.1</h3>
+            <p>
+                XHTML 1.1 is the latest version of the markup language as recommended by
+                the World Wide Web Consortium (W3C). It is derived from the general-purpose
+                XML language. It restricts many of the past practices in coding Web pages in
+                order to create a more standardized language that can offer greater
+                functionality in the future.
+            </p>
+                
+            <p>    
+                Use of this language is indicated by including the following Document Type
+                Definition (DTD) at the beginning of a Web page:
+            </p>
+            
+            <p class="rdec">
+                &lt;!DOCTYPE html <br/>
+                PUBLIC "-//W3C//DTD XHTML 1.1//EN" <br/>
+                "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+            </p>
+        
+
+        <h3>XHTML 1.0</h3>
+            <p>
+                The older XHTML 1.0 language comes in three "flavors". The particular
+                variant used is indicated by coding a special DTD entry at the beginning of a
+                page.
+            </p>
+
+            <p>
+                <b>XHTML 1.0 Strict.</b> This version is nearly identical to XHTML 1.1. It
+                has restrictive coding and employs Cascading Style Sheets (CSS) for most Web
+                page styling.
+            </p>
+
+            <p class="rdec">
+                &lt;!DOCTYPE html <br/>
+                PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" <br/>
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+            </p>
+
+            <p>
+                <b>XHTML 1.0 Transitional.</b> This version uses the newer coding practices
+                practices of XHTML 1.1 while permitting common older practices for
+                compatibility with current Web browsers.
+            </p>
+        
+            <p class="rdec">
+                &lt;!DOCTYPE html <br/>
+                PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" <br/>
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+            </p>
+        
+            <p>
+                <b>XHTML 1.0 Frameset.</b> This version is applied when using frames to
+                partition the browser window into two or more separate windows.
+            </p>
+        
+            <p class="rdec">
+                &lt;!DOCTYPE html <br/>
+                PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" <br/>
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+            </p>
+        
+            <p>
+                Complete XHTML 1.0 and 1.1 specifications are available on the W3C Web
+                site: 
+                <a href="https://www.gocomics.com/">World Wide Web Consortium</a>.
+            </p>
+
+            <div id="hr"></div>
+
+            <p class="fnote">
+                Copyright &copy;1995-2003 W3C &reg;(MIT, ERCIM, Keio), All Rights
+                Reserved.
+            </p>
+    </body>
+</html>

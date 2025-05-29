@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>page title goes here</title>
+        <style>
+            body {margin: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: blanchedalmond;}
+            #Title {height: 60px; width: 400px; position: relative;}
+            #Title2 {position: absolute; left: 40px; top: 20px; font-size: 18pt; font-weight: bold; color: darkgoldenrod; z-index: 2;}
+            #Title1 {position: absolute; left: 43px; top: 23px; font-size: 18pt; font-weight: bold; color: silver; z-index: 1;}
+            #Container {position: relative; width: 420px; height: 180px; border-width: 5px; border-style: outset;}
+            #Slika {width: 100%; height: 100%;}
+            #Text1 {position: absolute; width: 140px; height: 95px; border-style: ridge; border-width: 3px; padding: 5px; background-color: burlywood; color: white; font-size: 9pt; text-align: left; left: 20px; top: 170px;}
+            #Text2 {position: absolute; width: 140px; height: 95px; border-style: ridge; border-width: 3px; padding: 5px; background-color: burlywood; color: white; font-size: 9pt; text-align: left; left: 240px; top: 170px;}
+        </style>
+    </head>
+    <body>
+        <div id="Title">
+            <div id="Title1">Issuing a URL Request</div>
+            <div id="Title2">Issuing a URL Request</div>
+          </div>
+          
+          <div id="Container">
+            <img id="Slika" src="Slike/vaja14.gif" alt="Backdrop"/>
+            <div id="Text1">
+              The browser issues a URL address to connect to the Web
+              server that houses the Web page of interest.
+            </div>
+            <div id="Text2">
+              The Web server retrieves the page and redirects it to 
+              the PC making the URL request.
+            </div>
+          </div>          
+    </body>
+</html>

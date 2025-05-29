@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Zemljevid</title>
+        <style>
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(101, 87, 119)
+            }
+
+            h2 {
+                text-align: center;
+                color: white;
+            }
+
+            .centriran {
+                text-align: center;
+            }
+
+            .eden-za-drugim {
+                display: inline-block;
+            }
+
+            .eden-za-drugim img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+
+            a {
+                color: white;
+                font-size: 10pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: underline;
+            }
+            
+            a:hover {
+                color: yellow;
+                font-size: 12pt;
+                text-decoration: none;
+            }
+
+            .image-wrapper {
+                position: relative;
+                display: inline-block;
+            }
+
+            .border-overlay {
+                position: absolute;
+                border: 2px solid red;
+                pointer-events: none;
+            }
+
+            .overlay-svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+            }
+
+            .nazajko {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: #29073D;
+            }
+
+            .nazajko:hover {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h2>Letni časi</h2>
+
+        <div class="centriran">
+            <div class="eden-za-drugim">
+                <img src="Slike/pomlad.png" usemap="#pomlad"> <br>
+                <p><a href="https://sl.wikipedia.org/wiki/Pomlad">Pomlad</a></p>
+
+                <map name="pomlad">
+                    <area shape="circle" coords="87, 87, 87" alt="Pomlad" href="https://sl.wikipedia.org/wiki/Pomlad">
+                </map>
+            </div>
+
+            <div class="eden-za-drugim">
+                <img src="Slike/poletje.png" usemap="#poletje"> <br>
+                <p><a href="https://sl.wikipedia.org/wiki/Poletje">Poletje</a></p>
+
+                <map name="poletje">
+                    <area shape="circle" coords="87, 87, 87" alt="Poletje" href="https://sl.wikipedia.org/wiki/Poletje">
+                </map>
+            </div>
+
+            <div class="eden-za-drugim">
+                <img src="Slike/jesen.png" usemap="#jesen"> <br>
+                <p><a href="https://sl.wikipedia.org/wiki/Jesen">Jesen</a></p>
+
+                <map name="jesen">
+                    <area shape="circle" coords="87, 87, 87" alt="Jesen" href="https://sl.wikipedia.org/wiki/Jesen">
+                </map>
+            </div>
+
+            <div class="eden-za-drugim">
+                <img src="Slike/zima.png" usemap="#zima"> <br>
+                <p><a href="https://sl.wikipedia.org/wiki/Zima">Zima</a></p>
+
+                <map name="zima">
+                    <area shape="circle" coords="87, 87, 87" alt="Zima" href="https://sl.wikipedia.org/wiki/Zima">
+                </map>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="centriran">
+            <div class="image-wrapper">
+                <img src="Slike/350D_042.JPG" style="width: 100%; max-width: 800px; height: auto;" usemap="#gnu"/>
+
+                <div class="border-overlay" style="left: 50px; top: 40px; width: 120px; height: 80px;"></div>
+
+                <svg class="overlay-svg" viewbox="0 0 800 533" preserveAspectRatio="none">
+                    <polygon points="250,180 310, 200 290, 240 250, 220"
+                        fill="none"
+                        stroke="blue"
+                        stroke-width="2"/>
+                </svg>
+
+                <map name="gnu">
+                    <area shape="rect" coords="50, 40, 170, 120" href="https://en.wikipedia.org/wiki/Wildebeest"/>
+
+                    <area shape="poly" coords="250, 180, 310, 200, 290, 240, 250, 220" href="https://en.wikipedia.org/wiki/Wildebeest"/>
+                </map>
+            </div>
+        </div>
+
+        <div><a class="nazajko" href="seminarska.html">Nazaj</a></div>
+
+    </body>
+</html>

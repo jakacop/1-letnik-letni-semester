@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>page title goes here</title>
+        <script type="text/JavaScript">
+            function GetTotal()
+{
+  var processorprice = 0;
+  var harddriveprice = 0;
+  var memoryprice = 0;
+  var networkcardprice = 0;
+  var modemprice = 0;
+  var totalprice = 0;
+  var i;
+
+ 
+  // Get processor price
+  for (i=1; i<=3; i++) { if (document.getElementById("Processor" + i).checked) { processorprice=parseInt(document.getElementById("Processor" + i).value) } } ;
+  // get hard drive price 
+  for (i=1; i<=3; i++) { if (document.getElementById("HardDrive" + i).checked) { harddriveprice=parseInt(document.getElementById("HardDrive" + i).value) } } ;
+  // get memory price 
+  i=document.getElementById("Memory").selectedIndex ;
+  memoryprice=parseInt(document.getElementById("Memory")[i].value); 
+  // get network card price 
+  if (document.getElementById("NetworkCard").checked) { networkcardprice=parseInt(document.getElementById("NetworkCard").value)} else { networkcardprice=0} ;
+  // get modem price 
+  if (document.getElementById("Modem").checked) { modemprice=parseInt(document.getElementById("Modem").value)} else { modemprice=0} ;
+  // get total price 
+  totalprice=1000 + processorprice + harddriveprice + memoryprice + networkcardprice + modemprice ;
+  document.getElementById("TotalPrice").value=totalprice;
+  }
+        </script>
+        <style>
+            body {margin: 25px;}
+            table td {font-size: 10pt; font-family: Arial, Helvetica, sans-serif;}
+            table td:first-child {background-color: #F0F0F0;}
+        </style>
+    </head>
+    <body>
+        <h2>Computer Pricing</h2>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Base Price</td>
+                    <td>&nbsp; $1.000</td>
+                </tr>
+                <tr>
+                    <td>Processor:</td>
+                    <td>
+                        <input id="Processor1" type="radio" name="Processor" value="0" checked="checked"/>1.5 GHz<br/>
+                        <input id="Processor1" type="radio" name="Processor" value="400"/>2.0 GHz (add $400)<br/>
+                        <input id="Processor1" type="radio" name="Processor" value="600"/>3.0 GHz (add $600)<br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hard Drive:</td>
+                    <td>
+                        <input id="HardDrive1" type="radio" name="HardDrive" value="0" checked="checked"/>40 GB<br/>
+                        <input id="HardDrive2" type="radio" name="HardDrive" value="200"/>80 GB (add $200)<br/>
+                        <input id="HardDrive2" type="radio" name="HardDrive" value="400"/>100 GB (add $400)<br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Memory:</td>
+                    <td>
+                        <select id="Memory">
+                            <option value="0">1024 MB</option>
+                            <option value="300">2048 MB (add $300)</option>
+                            <option value="500">4096 MB (add $500)</option>
+                            <option value="700">8192 MB (add $700)</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Network Card:</td>
+                    <td>
+                        <input type="checkbox" id="NetworkCard" value="70"/>Add $70
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Modem:</td>
+                    <td>
+                        <input type="checkbox" id="Modem" value="50"/>Add $50
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="Total Price" onclick="GetTotal()"/></td>
+                    <td>$ <input type="text" id="TotalPrice" value="1000"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

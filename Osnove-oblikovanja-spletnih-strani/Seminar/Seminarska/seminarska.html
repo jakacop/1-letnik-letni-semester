@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Seminarska naloga</title>
+        <style>
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color:#DCDCDC;
+                color:#29073D;
+                margin:0px;
+                text-align:justify;
+                line-height:25px;
+            }
+
+            hr {
+                border: 0;
+                height: 2px;
+                background-color: #333;
+                width: 100%;
+                margin: 20px auto;
+            }
+
+            .slika {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .plavajoca-slika {
+                max-width: 100%;
+                height: auto;
+                float: right;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+
+            .navbar {
+                background-color: #29073D;
+                font-size: 10pt;
+                overflow: hidden;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1 1 auto;
+                justify-content: center;
+            }
+
+            .navbar a {
+                position: relative;
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-variant: small-caps;
+                font-weight: bold;
+            }
+
+            .navbar a:hover {
+                color: orangered;
+            }
+
+            .navbar a::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 25%;
+                bottom: 25%;
+                width: 1px;
+                background-color: white;
+            }
+
+            .navbar a:first-child::before {
+                content: none;
+            }
+
+            .sticky-menu {
+                position: sticky;
+                top: 0;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                padding: 20px;
+                z-index: 1000;
+                align-self: flex-start;
+            }
+
+            .sticky-menu a {
+                color: #29073D;
+                font-variant: small-caps;
+                font-weight: bold;
+                text-decoration: underline;
+                padding: 10px;
+                text-align: right;
+            }
+
+            .sticky-menu a:hover {
+                color: orangered;
+                background-color: #29073D;
+            }
+
+            .content {
+                margin-left: 20px;
+                padding: 20px;
+                flex: 1;
+            }
+
+            .content-wrapper {
+                display: flex;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <img class="slika" src="Slike/precka2.png" alt="header image">
+
+        <div class="navbar">
+                <a href="tabela.html">TABELA</a>
+                <a href="seznam.html">SEZNAM</a>
+                <a href="zemljevid.html">ZEMLJEVID</a>
+                <a href="obrazec.html">OBRAZEC</a>
+                <a href="storyboard.html">STORYBOARD</a>
+                <a href="clanek.html">ČLANEK</a>
+                <a href="domace_naloge.html">DOMAČE NALOGE</a>
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="sticky-menu">
+                <a href="tabela.html">TABELA</a>
+                <a href="seznam.html">SEZNAM</a>
+                <a href="zemljevid.html">ZEMLJEVID</a>
+                <a href="obrazec.html">OBRAZEC</a>
+                <a href="storyboard.html">STORYBOARD</a>
+                <a href="clanek.html">ČLANEK</a>
+                <a href="domace_naloge.html">DOMAČE NALOGE</a>
+            </div>
+
+            <div class="content">
+
+                <p>
+                    Seminarska naloga zahteva, da pripravite več spletnih strani. Vstopna spletna stran ima  v glavi sliko. Sledi navigacijska prečka s povezavami TABELA, SEZNAM, ZEMLJEVID, OBRAZEC, STORYBOARD, ČLANEK, DOMAČE NALOGE. Enaka navigacijska prečka naj se nahaja tudi na dnu spletne strani. Ob premiku miškinega kazalca na povezavo naj ta zamenja barvo. Ob levi strani naj se nahaja meni s povezavami do istih spletnih strani. Ta meni ima fiksno pozicijo glede na okno spletnega brskalnika (navidezno bo potoval s tekstom, ko se bomo pomikali navzdol po spletni strani). Ob premiku miškinega kazalca na te povezave naj se spremeni barva teksta in ozadja. Tekst na spletni strani so navodila, ki se nahajajo v tem dokumentu. Tekst naj bo obojestransko poravnan. Na vstopni spletni strani naj bodo ostale spletne strani, z izjemo spletne strani s povezavami na domače naloge, prikazane kot slike, ki plavajo desnood teksta. Tekst je navodilo, kako naj bo spletna stran oblikovana. Vse spletne strani, ki jih dosežemo preko povezav v navigacijski prečki naj imajo v levem spodnjem kotu povezavo na vstopno »domačo stran«.
+                </p>
+
+                <hr>
+
+                <p id="poglavje1">
+                    <img src="Slike/tabela.png" class="plavajoca-slika">
+                    Povezava TABELA naj nas poveže s spletno stranjo, ki vsebuje tabelo. Tabela je sestavljena iz treh delov. Glave, telesa in noge.    Vključuje slike in povezave na pdf datoteke. Glej sliko, ki kaže tabelo. Glava in noga tabele sta na sliki v temno viola barvi. Vi izberite barve v skladu z vašo izbrano barvno shemo.
+                </p>
+
+                <hr>
+
+                <p id="poglavje2" style="clear: right;">
+                    <img src="Slike/seznam.png" class="plavajoca-slika">
+                    Povezava SEZNAM nas poveže s spletno stranjo na kateri sta dva seznama. V prvem seznamu so elementi seznama označeni z majhnimi     sličicami, kot je razvidno s slike, ki prikazuje seznama.
+                </p>
+
+                <p>
+                    Drugi seznam vsebuje tri povezave. Povezava Poglavje 1.1 naj nas poveže z zunanjim dokumentom in naj se nahaja na notranji lokaciji, ki označuje Poglavja 1.1, Povezava Poglavje 1.2 naj nas poveže z istim zunanjim dokumentom in naj se nahaja na notranji lokaciji, ki označuje Poglavja 1.2, podobno za povezavo Poglavje 1.3.
+                </p>
+
+                <hr>
+
+                <p id="poglavje3" style="clear: right;">
+                    <img src="Slike/zemljevid.png" class="plavajoca-slika">
+                    Povezava ZEMLJEVID nas poveže s spletno stranjo z dvema slikama, kjer je vsaka definirana kot mapa. V prvi so 4 področja v obliki kroga, vsak krog nas poveže z ustrezno pdf datoteko.
+                </p>
+
+                <p>
+                    Na drugi sliki sta področji, ki definirata mapo v obliki pravokotnika in poligona. Lika, ki določata področje povezave, naj bosta na sliki narisana, da bo možno preveriti, ali mapa pravilno deluje! Povezavi naj nas vodita do poljubnih spletnih strani.
+                </p>
+
+                <hr>
+
+                <p style="clear: right;">
+                    <img src="Slike/obrazec.png" class="plavajoca-slika">
+                    Povezava OBRAZEC naj nas vodi do spletne strani z obrazcem. Obrazec je narejen s pomočjo tabele z dvema stolpcema. Vključuje Textbox (3x), Radio Button (2x), Drop-Down List, Checkbox, Textarea, Reset in Submit Button (Glej sliko). 
+                </p>
+
+                <hr>
+
+                <p style="clear: right;">
+                    <img src="Slike/storyboard.png" class="plavajoca-slika">
+                    Povezava STORYBOARD nas vodi do spletne strani, ki je zgrajen iz večjega števila škatel v različnih barvah. Sestavite zgodbo. V    škatlah naj bo več slik, plavajo naj levo in desno od teksta. Barve naj bodo usklajene.
+                </p>
+
+                <hr>
+
+                <p style="clear: right;">
+                    <img src="Slike/clanek.png" class="plavajoca-slika">
+                    Povezava ČLANEK nas vodi do spletne strani s člankom. Tekst v članku je podan na koncu navodil.
+                </p>
+
+                <hr>
+
+                <p style="clear: right;">
+                    Povezava DOMAČE NALOGE nas vodi do seznama povezav, ki nas pripeljejo do opravljenih domačih nalog. Seznam strukturirajte po temah.
+                </p>
+
+                <br/>
+            
+            </div>
+
+        </div>
+
+        <div class="navbar">
+                <a href="tabela.html" target="_blank">TABELA</a>
+                <a href="seznam.html" target="_blank">SEZNAM</a>
+                <a href="zemljevid.html" target="_blank">ZEMLJEVID</a>
+                <a href="obrazec.html" target="_blank">OBRAZEC</a>
+                <a href="storyboard.html" target="_blank">STORYBOARD</a>
+                <a href="clanek.html" target="_blank">ČLANEK</a>
+                <a href="domace_naloge.html" target="_blank">DOMAČE NALOGE</a>
+        </div>
+        
+    </body>
+</html>

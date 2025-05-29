@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>page title goes here</title>
+        <style>
+            p {text-align: justify;}
+            .modrobel {color: white; background-color: royalblue; text-align: center; font-size: 30px;}
+            .rdec {color: red;}
+            div#offset {color: blue; margin-right: 25px; margin-left: 25px;}
+            hr {background-color: gold; color: gold; height: 4px;}
+        </style>
+    </head>
+    <body style="margin: 20px;">
+        <h2 class="modrobel">
+            Using Spans and Divisions
+        </h2>
+
+        <p>
+            Spans and divisions are containers for enclosing text and other page elements 
+            for the purpose of applying styles to them. The following two paragraphs, for 
+            example, are enclosed inside a single division to which an embedded style 
+            declaration is applied. Both paragraphs inherit the division's styles.
+        </p>
+
+        <div id="offset">
+            <hr/>
+            <p>
+                A <span class="rdec">span</span> tag is an in-line tag normally used to enclose a short string of text 
+                in order to apply styles to individual characters, words, phrases, sentences, 
+                or other text less than a paragraph in length.
+            </p>
+
+            <p>
+                A <span class="rdec">division</span> tag is a block-level tag used to enclose blocks of text and other 
+                page elements in order to apply common styles to them. A division causes a 
+                line break before and after its contained content.
+            </p>
+        </div>
+
+        <div id="offset">
+            <hr/>
+        </div>
+
+        <p>
+            Neither spans nor divisions should be styled with tag selectors. Rather, 
+            use class selectors, id selectors, or in-line style sheets to apply styling 
+            to the content they surround.
+        </p>
+
+    </body>
+</html>

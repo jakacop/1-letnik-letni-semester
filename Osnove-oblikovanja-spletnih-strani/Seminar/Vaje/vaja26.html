@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>page title goes here</title>
+        <style>
+            body {margin: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 8pt;}
+            h2 {color: royalblue;}
+            table {width: 500px;}
+            table td {font-size: 8pt; padding 3px}
+            legend {color: royalblue;}
+            table input {border-width: 0px;}
+            textarea {border-width: 0px;}
+            form {font-family: Arial, Helvetica, sans-serif; font-size: 9pt; margin-left: 5px;}
+        </style>
+    </head>
+    <body>
+        <h2>Visitor Survey</h2>
+
+        <p>Please let me know ...</p>
+
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Name</legend>
+                            <input name="Name" type="text" size="35">
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>E-Mail</legend>
+                            <input name="Email" type="text" size="35">
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Residence (City/ST/Country)</legend>
+                            <input name="Residence" type="text" size="35">
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Web Connection</legend>
+                            <select name="Connection">
+                                <option value="D">Dial Up</option>
+                                <option value="xx">xx</option>
+                                <option value="yy">yy</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Age</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" value="a">Under 20
+                                    </td>
+                                    <td>
+                                        <input type="radio" value="b">20-25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" value="c">26-30
+                                    </td>
+                                    <td>
+                                        <input type="radio" value="d">Over 30
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+
+                    <td>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" value="e"> Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" value="f"> Male
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend>Comments</legend>
+                            <textarea id="MyTextarea" cols="93" rows="5" name="Comments"></textarea>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            &nbsp;&nbsp;
+
+            <input type="submit" name="Submit" value="Submit" id="SG"/>
+            <input type="reset" name="Reset" value="Reset" id="RG"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Storyboard</title>
+        <style>
+
+            body {
+                padding: 10px;
+                margin: 10px;
+                background-color: goldenrod;
+            }
+
+            h2 {
+                color: goldenrod;
+                background-color: #29073D;
+                text-align: center;
+                padding: 5px;
+            }
+
+            .spodnja-crta {
+                margin-top: 575px;
+                height: 10px;
+                padding: 5px;
+                color: #29073D;
+            }
+
+            .box-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .box1 {
+                position: absolute;
+                left: 100px;
+                top: 100px;
+                width: 100px;
+                height: 100px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;
+            }
+
+            .box2 {
+                position: absolute;
+                left: 200px;
+                top: 150px;
+                width: 100px;
+                height: 100px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;      
+            }
+
+            .box3 {
+                position: absolute;
+                left: 300px;
+                top: 50px;
+                width: 100px;
+                height: 100px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;
+            }
+
+            .box4 {
+                display: flex;
+                position: absolute;
+                left: 500px;
+                top: 75px;
+                width: 200px;
+                height: 100px;
+                background-color: lightyellow;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .box5 {
+                position: absolute;
+                left: 800px;
+                top: 50px;
+                width: 300px;
+                height: 350px;
+                background-color: white;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;
+            }
+
+            .box6 {
+                display: flex;
+                position: absolute;
+                left: 650px;
+                top: 200px;
+                width: 100px;
+                height: 100px;
+                background-color: lightyellow;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .box7 {
+                display: flex;
+                position: absolute;
+                left: 500px;
+                top: 350px;
+                width: 100px;
+                height: 100px;
+                background-color: lightyellow;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .box8 {
+                position: absolute;
+                left: 100px;
+                top: 300px;
+                width: 50px;
+                height: 50px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;             
+            }
+
+            .box9 {
+                position: absolute;
+                left: 150px;
+                top: 350px;
+                width: 50px;
+                height: 50px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;          
+            }
+
+            .box10 {
+                position: absolute;
+                left: 200px;
+                top: 400px;
+                width: 50px;
+                height: 50px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;            
+            }
+
+            .box11 {
+                position: absolute;
+                left: 250px;
+                top: 400px;
+                width: 50px;
+                height: 50px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;            
+            }
+
+            .box12 {
+                position: absolute;
+                left: 300px;
+                top: 350px;
+                width: 50px;
+                height: 50px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;           
+            }
+
+            .box13 {
+                position: absolute;
+                left: 350px;
+                top: 300px;
+                width: 50px;
+                height: 50px;
+                background-color: lightyellow;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;           
+            }
+
+            .box14 {
+                position: absolute;
+                left: 250px;
+                top: 350px;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;           
+            }
+
+            .box15 {
+                position: absolute;
+                left: 300px;
+                top: 400px;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;              
+            }
+
+            .box16 {
+                position: absolute;
+                left: 350px;
+                top: 450px;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 2;             
+            }
+
+            .box17 {
+                position: absolute;
+                left: 300px;
+                top: 375px;
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;             
+            }
+
+            .box18 {
+                position: absolute;
+                left: 350px;
+                top: 425px;
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;           
+            }
+
+            .box19 {
+                position: absolute;
+                left: 275px;
+                top: 400px;
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;             
+            }
+
+            .box20 {
+                position: absolute;
+                left: 325px;
+                top: 450px;
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;
+            }
+
+            .box21 {
+                position: absolute;
+                left: 25px;
+                top: 25px;
+                width: 450px;
+                height: 500px;
+                background-color: goldenrod;
+                border: 1px solid black;
+                z-index: 1;
+            }
+
+            .box22 {
+                position: absolute;
+                left: 125px;
+                top: 125px;
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;
+            }
+
+            .box23 {
+                position: absolute;
+                left: 325px;
+                top: 75px;
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;
+            }
+
+            .box24 {
+                position: absolute;
+                left: 225px;
+                top: 175px;
+                width: 50px;
+                height: 50px;
+                background-color: pink;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 3;
+            }
+
+            .box25 {
+                position: absolute;
+                left: 150px;
+                top: 200px;
+                width: 100px;
+                height: 100px;
+                background-color: lightyellow;
+                border: 1px solid black;
+                padding: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 4;
+            }
+
+            .nazajko {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: #29073D;
+            }
+
+            .nazajko:hover {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h2>Zgodba se prične tako:</h2>
+
+        <div class="box-container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4">To je Lojze Z velikim jezikom.</div>
+            <div class="box5">
+                <img src="Slike/J_face_happy (20240802075655).png" style="width: 50%;">
+                <div class="box25">Prav nič se ne meni za nas in nam veselo kaže jezik!</div>
+            </div>
+            <div class="box6">Danes je dobre volje.</div>
+            <div class="box7">Kot vsak drugi dan. <br> Na lihe dni pa je bolj klavrne volje.</div>
+            <div class="box8"></div>
+            <div class="box9"></div>
+            <div class="box10"></div>
+            <div class="box11"></div>
+            <div class="box12"></div>
+            <div class="box13"></div>
+            <div class="box14"></div>
+            <div class="box15"></div>
+            <div class="box16"></div>
+            <div class="box17"></div>
+            <div class="box18"></div>
+            <div class="box19"></div>
+            <div class="box20"></div>
+            <div class="box21"></div>
+            <div class="box22"></div>
+            <div class="box23"></div>
+            <div class="box24"></div>
+        </div>
+
+        <h2 class="spodnja-crta"></h2>
+
+        <div><a class="nazajko" href="seminarska.html">Nazaj</a></div>
+
+    </body>
+</html>

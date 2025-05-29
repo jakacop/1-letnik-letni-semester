@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabela</title>
+        <style>
+
+            table#tabelca {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0;
+                border: 1px solid orangered;
+            }
+
+            table#tabelca th {
+                background-color: #29073D;
+                color: orangered;
+                padding: 20px;
+                border: 1px solid orangered;
+            }
+
+            table#tabelca td {
+                background-color: goldenrod;
+                color: #29073D;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid orangered;
+            }
+
+            table#tabelca tr:nth-child(1) td {
+                background-color: darkgoldenrod;
+                font-weight: bold;
+            }
+
+            table#tabelca tr:nth-child(1) td:first-child {
+                background-color: goldenrod;
+            }
+
+            table#tabelca tr:nth-child(2) td:first-child {
+                background-color: gold;
+                font-weight: bold;
+            }
+
+            table#tabelca tr:nth-child(3) td:first-child {
+                background-color: silver;
+                font-weight: bold;
+            }
+
+            table#tabelca tr:nth-child(4) td:first-child {
+                background-color: darkgoldenrod;
+                font-weight: bold;
+            }
+
+            thead, tbody, tfoot {
+                border: none;
+            }
+
+            .sliko-texto-celica {
+                display: flex;
+                align-items: center;
+            }
+
+            .sliko-texto-celica img {
+                width: 75px;
+                height: auto;
+            }
+
+            .text {
+                margin-top: 5px;
+            }
+
+            .text p {
+                text-align: left;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .nazajko {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: #29073D;
+            }
+
+            .nazajko:hover {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: red;
+            }
+
+            .nazajko {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: #29073D;
+            }
+
+            .nazajko:hover {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20pt;
+                font-weight: bold;
+                font-variant: small-caps;
+                text-decoration: none;
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <table id="tabelca">
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        RAZVRSTITEV PRVIH TREH TEKMOVALCEV
+                    </th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th colspan="4" style="padding: 10px;"></th>
+                </tr>
+            </tfoot>
+            
+            <tbody>
+                <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        Tekmovalec in zbrano število glasov
+                    </td>
+
+                    <td>
+                        Raziskovalno področje
+                    </td>
+
+                    <td>
+                        Povezava na članek raziskovalca
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Prvo mesto:
+                    </td>
+
+                    <td class="sliko-texto-celica">
+                        <img src="Slike/J_face_happy (20240802075655).png" alt="Magda Tiktok">
+                        <div class="text">
+                            <p>Magda Tiktok</p>
+                            <p>532 Točk</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        učenje
+                    </td>
+
+                    <td>
+                        <a href="../Seminarska/seminarska.html">Povezava nazaj</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Drugo mesto:
+                    </td>
+
+                    <td class="sliko-texto-celica">
+                        <img src="Slike/J_face_surprised (20240802081026).png" alt="Tatjana Zrnec">
+                        <div class="text">
+                            <p>Tatjana Zrnec</p>
+                            <p>417 Točk</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        razumevanje prizorov
+                    </td>
+
+                    <td>
+                        <a href="../Seminarska/seminarska.html">Povezava nazaj</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Tretje mesto:
+                    </td>
+
+                    <td class="sliko-texto-celica">
+                        <img src="Slike/J_face (20240612051344).png" alt="Anka Kotnik">
+                        <div class="text">
+                            <p>Anka Kotnik</p>
+                            <p>407 Točk</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        segmentacija in grupiranje
+                    </td>
+
+                    <td>
+                        <a href="../Seminarska/seminarska.html">Povezava nazaj</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div><a class="nazajko" href="seminarska.html">Nazaj</a></div>
+
+    </body>
+</html>
